@@ -1,21 +1,12 @@
-Masukkan path ke file (relative terhadap ./bin/): ../test/test14.txt
-
-Pilih algoritma pencarian:
-1. UCS
-2. Greedy Best-First Search
-3. A*
-Pilihan (1/2/3): 2
-
-Pilih heuristic:
-1. Jumlah blocker ke pintu keluar (Recommended)
-2. Jarak ke pintu keluar
-Pilihan heuristic (1/2): 1
+File path: ../test/test14.txt
+Algoritma: Iterative Deepening Searc (IDS)
 
 ========================
 
 Solusi:
+
 Papan Awal
- K
+ K    
 ...IBB
 AAAI.G
 HH.D.G
@@ -24,70 +15,43 @@ HH.D.G
 .FF...
 
 Gerakan 1: D-bawah
- K
+ K    
 ...IBB
 AAAI.G
 HH...G
-.PEDCC
-.PED..
-.FF...
-
-Gerakan 2: H-kanan
- K
-...IBB
-AAAI.G
-..HH.G
-.PEDCC
-.PED..
-.FF...
-
-Gerakan 3: D-bawah
- K
-...IBB
-AAAI.G
-..HH.G
 .PE.CC
 .PED..
 .FFD..
 
-Gerakan 4: C-kiri
- K
+Gerakan 2: C-kiri
+ K    
 ...IBB
 AAAI.G
-..HH.G
+HH...G
 .PECC.
 .PED..
 .FFD..
+
+Gerakan 3: G-bawah
+ K    
+...IBB
+AAAI..
+HH....
+.PECC.
+.PED.G
+.FFD.G
+
+Gerakan 4: C-kanan
+ K    
+...IBB
+AAAI..
+HH....
+.PE.CC
+.PED.G
+.FFD.G
 
 Gerakan 5: H-kanan
- K
-...IBB
-AAAI.G
-...HHG
-.PECC.
-.PED..
-.FFD..
-
-Gerakan 6: G-bawah
- K
-...IBB
-AAAI..
-...HH.
-.PECC.
-.PED.G
-.FFD.G
-
-Gerakan 7: H-kanan
- K
-...IBB
-AAAI..
-....HH
-.PECC.
-.PED.G
-.FFD.G
-
-Gerakan 8: C-kanan
- K
+ K    
 ...IBB
 AAAI..
 ....HH
@@ -95,8 +59,8 @@ AAAI..
 .PED.G
 .FFD.G
 
-Gerakan 9: I-bawah
- K
+Gerakan 6: I-bawah
+ K    
 ....BB
 AAA...
 ...IHH
@@ -104,8 +68,8 @@ AAA...
 .PED.G
 .FFD.G
 
-Gerakan 10: A-kanan
- K
+Gerakan 7: A-kanan
+ K    
 ....BB
 ..AAA.
 ...IHH
@@ -113,8 +77,8 @@ Gerakan 10: A-kanan
 .PED.G
 .FFD.G
 
-Gerakan 11: P-atas
- K
+Gerakan 8: P-atas
+ K    
 .P..BB
 .PAAA.
 ...IHH
@@ -123,5 +87,5 @@ Gerakan 11: P-atas
 .FFD.G
 
 
-Jumlah node dikunjungi: 45
-Waktu eksekusi: 18ms
+Jumlah node dikunjungi: 9778666
+Waktu eksekusi: 13757ms

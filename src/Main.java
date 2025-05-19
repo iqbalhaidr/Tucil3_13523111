@@ -13,10 +13,11 @@ public class Main {
             pw.println("File path: " + path);
 
             System.out.println("\nPilih algoritma pencarian:");
-            System.out.println("1. UCS");
-            System.out.println("2. Greedy Best-First Search");
+            System.out.println("1. Uniform Cost Search (UCS)");
+            System.out.println("2. Greedy Best-First Search (GBFS)");
             System.out.println("3. A*");
-            System.out.print("Pilihan (1/2/3): ");
+            System.out.println("4. Iterative Deepening Searc (IDS) [BONUS]");
+            System.out.print("Pilihan (1/2/3/4): ");
             int algo = sc.nextInt();
             if (algo == 1) {
                 pw.println("Algoritma: Uniform Cost Search (UCS)");
@@ -24,11 +25,14 @@ public class Main {
                 pw.println("Algoritma: Greedy Best-First Search (GBFS)");
             } else if (algo == 3) {
                 pw.println("Algoritma: A*");
+            } else if (algo == 4) {
+                pw.println("Algoritma: Iterative Deepening Search (IDS)");
+            } else {
+                throw new Exception("Invalid input");
             }
 
             int heuristic = 0;
             if (algo == 2 || algo == 3) {
-                // 3. Jika heuristic diperlukan
                 System.out.println("\nPilih heuristic:");
                 System.out.println("1. Jumlah blocker ke pintu keluar (Recommended)");
                 System.out.println("2. Jarak ke pintu keluar");
@@ -41,13 +45,24 @@ public class Main {
                 }
             }
 
+            int maxDepth = 0;
+            if (algo == 4) {
+                System.out.print("Masukkan kedalaman maksimum (akan diiterasi 1 - maxDepth): ");
+                maxDepth = sc.nextInt();
+            }
+
             Board board = Parser.parseBoard(path);
             Node root = new Node(board);
             Solver s = new Solver(root);
             int[] visitedNodeCtr = new int[1];
+            boolean isFound = false;
 
             long start = System.nanoTime();
-            boolean isFound = s.start(algo, heuristic, visitedNodeCtr);
+            if (algo == 4) {
+                isFound = s.startIDS(root, maxDepth, visitedNodeCtr);
+            } else {
+                isFound = s.start(algo, heuristic, visitedNodeCtr);
+            }
             long end = System.nanoTime();
             long durationInMillis = (end - start) / 1_000_000;
 
@@ -68,7 +83,7 @@ public class Main {
             System.out.println("Waktu eksekusi: " + durationInMillis + "ms");
             pw.println("Waktu eksekusi: " + durationInMillis + "ms");
 
-            System.out.println("\nHasil disimpan di ../data/result.txt");
+            System.out.println("\nHasil disimpan di ../test/result.txt");
         } catch (Exception e) {
             System.out.println("\nTerjadi kesalahan");
             pw.println("Terjadi kesalahan");

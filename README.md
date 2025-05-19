@@ -26,6 +26,7 @@ java -jar program.jar
   - Uniform Cost Search (UCS)
   - Greedy Best First Search (GBFS)
   - A*
+  - Iterative Deepening Search (IDS)
 
 - Mendukung heuristik untuk algoritma GBFS dan A*
   - Jumlah blocker ke pintu keluar (Recommended)

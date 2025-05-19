@@ -17,6 +17,63 @@ public class Solver {
         this.visitedStates = new HashSet<>();
     }
 
+    public boolean startIDS(Node root, int maxDepth, int[] visitedNodeCtr) {
+        for (int depth = 0; depth <= maxDepth; depth++) {
+            visitedStates.clear();
+            visitedNodes.clear();
+            
+            visitedNodes.add(root);
+            visitedStates.add(root.getState().toHashString());
+            visitedNodeCtr[0]++;
+            
+            if (depthLimitedSearch(root, depth, 0, visitedNodeCtr)) {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+    private boolean depthLimitedSearch(Node node, int limit, int nodeIndex, int[] visitedNodeCtr) {
+        visitedNodeCtr[0]++;
+        if (node.isWinning()) {
+            return true;
+        }
+        
+        if (limit == 0) return false;
+        
+        for (Piece p : node.getState().getPieces()) {
+            for (int move : node.getState().calcPossibleMove(p.getId())) {
+                char pieceId = p.getId();
+                Board newBoard = node.getState().clone();
+                newBoard.movePiece(pieceId, move);
+                
+                String hash = newBoard.toHashString();
+                if (visitedStates.contains(hash)) continue;
+                
+                Node child = node.clone();
+                child.setState(newBoard);
+                child.setWhat(pieceId + "-" + (p.isOrientationHorizontal() ? 
+                    (move > 0 ? "kanan" : "kiri") : 
+                    (move > 0 ? "bawah" : "atas")));
+                
+                child.getPath().add(nodeIndex);
+                visitedNodes.add(child);
+                int childIndex = visitedNodes.size() - 1;
+                visitedStates.add(hash);
+                
+                if (depthLimitedSearch(child, limit - 1, childIndex, visitedNodeCtr)) {
+                    return true;
+                }
+                
+                visitedStates.remove(hash);
+                visitedNodes.remove(visitedNodes.size() - 1);
+            }
+        }
+        
+        return false;
+    }
+
     /*
      * 1 = UCS
      * 2 = GBFS

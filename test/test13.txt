@@ -1,8 +1,8 @@
 6 6
-11
-.AB..C
-.ABDDC
+10
+.A..DC
+.A..DC
 PPLJ..K
 F.LJI.
-FGGJI.
+FGG.I.
 FHHH..

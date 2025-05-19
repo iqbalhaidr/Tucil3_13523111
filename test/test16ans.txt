@@ -1,19 +1,10 @@
-Masukkan path ke file (relative terhadap ./bin/): ../test/test16.txt
-
-Pilih algoritma pencarian:
-1. UCS
-2. Greedy Best-First Search
-3. A*
-Pilihan (1/2/3): 3
-
-Pilih heuristic:
-1. Jumlah blocker ke pintu keluar (Recommended)
-2. Jarak ke pintu keluar
-Pilihan heuristic (1/2): 1
+File path: ../test/test16.txt
+Algoritma: Iterative Deepening Searc (IDS)
 
 ========================
 
 Solusi:
+
 Papan Awal
 ..P...
 AAP...
@@ -21,71 +12,71 @@ H..DGG
 H..DCC
 R.EE..
 RFF.QQ
-  K
+  K   
 
-Gerakan 1: E-kanan
-..P...
-AAP...
-H..DGG
-H..DCC
-R..EE.
-RFF.QQ
-  K
-
-Gerakan 2: P-bawah
+Gerakan 1: P-bawah
 ......
 AA....
 H.PDGG
 H.PDCC
-R..EE.
+R.EE..
 RFF.QQ
-  K
+  K   
 
-Gerakan 3: A-kanan
+Gerakan 2: A-kanan
 ......
-....AA
+.AA...
+H.PDGG
+H.PDCC
+R.EE..
+RFF.QQ
+  K   
+
+Gerakan 3: E-kanan
+......
+.AA...
 H.PDGG
 H.PDCC
 R..EE.
 RFF.QQ
-  K
+  K   
 
 Gerakan 4: H-atas
 ......
-H...AA
+HAA...
 H.PDGG
 ..PDCC
 R..EE.
 RFF.QQ
-  K
+  K   
 
 Gerakan 5: R-atas
 ......
-H...AA
+HAA...
 H.PDGG
 R.PDCC
 R..EE.
 .FF.QQ
-  K
+  K   
 
 Gerakan 6: F-kiri
 ......
-H...AA
+HAA...
 H.PDGG
 R.PDCC
 R..EE.
 FF..QQ
-  K
+  K   
 
 Gerakan 7: P-bawah
 ......
-H...AA
+HAA...
 H..DGG
 R..DCC
 R.PEE.
 FFP.QQ
-  K
+  K   
 
 
-Jumlah node dikunjungi: 1184
-Waktu eksekusi: 53ms
+Jumlah node dikunjungi: 2978338
+Waktu eksekusi: 4433ms

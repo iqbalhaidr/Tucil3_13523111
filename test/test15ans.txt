@@ -1,19 +1,10 @@
-Masukkan path ke file (relative terhadap ./bin/): ../test/test15.txt
-
-Pilih algoritma pencarian:
-1. UCS
-2. Greedy Best-First Search
-3. A*
-Pilihan (1/2/3): 2
-
-Pilih heuristic:
-1. Jumlah blocker ke pintu keluar (Recommended)
-2. Jarak ke pintu keluar
-Pilihan heuristic (1/2): 2
+File path: ../test/test15.txt
+Algoritma: Iterative Deepening Searc (IDS)
 
 ========================
 
 Solusi:
+
 Papan Awal
  B.IIJ.
  B.C.J.
@@ -22,55 +13,15 @@ KG.CPPD
  G....E
  FFFHHE
 
-Gerakan 1: J-bawah
- B.II..
- B.C.J.
- AAC.JD
-KG.CPPD
- G....E
- FFFHHE
-
-Gerakan 2: I-kanan
- B...II
- B.C.J.
- AAC.JD
-KG.CPPD
- G....E
- FFFHHE
-
-Gerakan 3: D-atas
- B...II
- B.C.JD
- AAC.JD
-KG.CPP.
- G....E
- FFFHHE
-
-Gerakan 4: I-kiri
- BII...
- B.C.JD
- AAC.JD
-KG.CPP.
- G....E
- FFFHHE
-
-Gerakan 5: J-atas
- BII.J.
+Gerakan 1: D-atas
+ B.IIJ.
  B.C.JD
  AAC..D
 KG.CPP.
  G....E
  FFFHHE
 
-Gerakan 6: E-atas
- BII.J.
- B.C.JD
- AAC..D
-KG.CPPE
- G....E
- FFFHH.
-
-Gerakan 7: I-kanan
+Gerakan 2: E-atas
  B.IIJ.
  B.C.JD
  AAC..D
@@ -78,94 +29,62 @@ KG.CPPE
  G....E
  FFFHH.
 
-Gerakan 8: J-bawah
+Gerakan 3: H-kanan
+ B.IIJ.
+ B.C.JD
+ AAC..D
+KG.CPPE
+ G....E
+ FFF.HH
+
+Gerakan 4: F-kanan
+ B.IIJ.
+ B.C.JD
+ AAC..D
+KG.CPPE
+ G....E
+ .FFFHH
+
+Gerakan 5: G-bawah
+ B.IIJ.
+ B.C.JD
+ AAC..D
+K..CPPE
+ G....E
+ GFFFHH
+
+Gerakan 6: J-bawah
  B.II..
  B.C.JD
  AAC.JD
-KG.CPPE
+K..CPPE
  G....E
- FFFHH.
+ GFFFHH
 
-Gerakan 9: I-kanan
+Gerakan 7: I-kanan
  B..II.
  B.C.JD
  AAC.JD
-KG.CPPE
+K..CPPE
  G....E
- FFFHH.
-
-Gerakan 10: H-kanan
- B..II.
- B.C.JD
- AAC.JD
-KG.CPPE
- G....E
- FFF.HH
-
-Gerakan 11: I-kanan
- B...II
- B.C.JD
- AAC.JD
-KG.CPPE
- G....E
- FFF.HH
-
-Gerakan 12: C-atas
- B.C.II
- B.C.JD
- AAC.JD
-KG..PPE
- G....E
- FFF.HH
-
-Gerakan 13: P-kiri
- B.C.II
- B.C.JD
- AAC.JD
-KGPP..E
- G....E
- FFF.HH
-
-Gerakan 14: F-kanan
- B.C.II
- B.C.JD
- AAC.JD
-KGPP..E
- G....E
- .FFFHH
-
-Gerakan 15: I-kiri
- B.CII.
- B.C.JD
- AAC.JD
-KGPP..E
- G....E
- .FFFHH
-
-Gerakan 16: J-bawah
- B.CII.
- B.C..D
- AAC..D
-KGPP.JE
- G...JE
- .FFFHH
-
-Gerakan 17: G-bawah
- B.CII.
- B.C..D
- AAC..D
-K.PP.JE
- G...JE
  GFFFHH
 
-Gerakan 18: P-kiri
+Gerakan 8: C-atas
  B.CII.
- B.C..D
- AAC..D
-KPP..JE
- G...JE
+ B.C.JD
+ AAC.JD
+K...PPE
+ G....E
+ GFFFHH
+
+Gerakan 9: P-kiri
+ B.CII.
+ B.C.JD
+ AAC.JD
+KPP...E
+ G....E
  GFFFHH
 
 
-Jumlah node dikunjungi: 36
-Waktu eksekusi: 14ms
+Jumlah node dikunjungi: 3799767
+Waktu eksekusi: 5579ms
