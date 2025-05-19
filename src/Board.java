@@ -247,6 +247,99 @@ public class Board {
 
         return sb.toString();
     }
+
+    public String toString3(char id) {
+        StringBuilder sb = new StringBuilder();
+        if (kPos == 1) { // Kiri
+            for (int i = 0; i < sizeY; i++) {
+                if (i == exitGate.y) {
+                    sb.append('K');
+                } else {
+                    sb.append(' ');
+                }
+
+                for (int j = 0; j < sizeX; j++) {
+                    char curChar = buf[i][j];
+                    if (curChar == id && curChar != 'P') {
+                        sb.append(curChar);
+                    } else if (curChar == 'P') {
+                        sb.append(curChar);
+                    } else {
+                        sb.append(curChar);
+                    }
+                }
+                sb.append('\n');
+            }
+        } else if (kPos == 2) { // Atas
+            for (int i = 0; i < sizeX; i++) {
+                if (i == exitGate.x) {
+                    sb.append('K');
+                } else {
+                    sb.append(' ');
+                }
+            }
+            sb.append('\n');
+
+            for (int i = 0; i < sizeY; i++) {
+                for (int j = 0; j < sizeX; j++) {
+                    char curChar = buf[i][j];
+                    if (curChar == id && curChar != 'P') {
+                        sb.append(curChar);
+                    } else if (curChar == 'P') {
+                        sb.append(curChar);
+                    } else {
+                        sb.append(curChar);
+                    }
+                }
+                sb.append('\n');
+            }
+
+        } else if (kPos == 3) { // Kanan
+            for (int i = 0; i < sizeY; i++) {
+                for (int j = 0; j < sizeX; j++) {
+                    char curChar = buf[i][j];
+                    if (curChar == id && curChar != 'P') {
+                        sb.append(curChar);
+                    } else if (curChar == 'P') {
+                        sb.append(curChar);
+                    } else {
+                        sb.append(curChar);
+                    }
+                }
+
+                if (i == exitGate.y) {
+                    sb.append('K');
+                }
+                sb.append('\n');
+            }
+
+        } else if (kPos == 4) { // Bawah
+            for (int i = 0; i < sizeY; i++) {
+                for (int j = 0; j < sizeX; j++) {
+                    char curChar = buf[i][j];
+                    if (curChar == id && curChar != 'P') {
+                        sb.append(curChar);
+                    } else if (curChar == 'P') {
+                        sb.append(curChar);
+                    } else {
+                        sb.append(curChar);
+                    }
+                }
+                sb.append('\n');
+            }
+
+            for (int i = 0; i < sizeX; i++) {
+                if (i == exitGate.x) {
+                    sb.append('K');
+                } else {
+                    sb.append(' ');
+                }
+            }
+            sb.append('\n');
+        }
+
+        return sb.toString();
+    }
     
     public String toString() {
         StringBuilder sb = new StringBuilder();

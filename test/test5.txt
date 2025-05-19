@@ -1,5 +1,5 @@
 6 6
-11
+10
 AAA.JL
 BBB.JL
 CPP.JIK

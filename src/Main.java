@@ -1,20 +1,31 @@
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        PrintWriter pw = null;
 
         try {
-            System.out.print("Masukkan path ke file (relative terhadap ./bin/): ");
+            pw = new PrintWriter("../test/result.txt");
+            System.out.print("\nMasukkan path ke file (relative terhadap ./bin/): ");
             String path = sc.nextLine();
-    
+            pw.println("File path: " + path);
+
             System.out.println("\nPilih algoritma pencarian:");
             System.out.println("1. UCS");
             System.out.println("2. Greedy Best-First Search");
             System.out.println("3. A*");
             System.out.print("Pilihan (1/2/3): ");
             int algo = sc.nextInt();
-    
+            if (algo == 1) {
+                pw.println("Algoritma: Uniform Cost Search (UCS)");
+            } else if (algo == 2) {
+                pw.println("Algoritma: Greedy Best-First Search (GBFS)");
+            } else if (algo == 3) {
+                pw.println("Algoritma: A*");
+            }
+
             int heuristic = 0;
             if (algo == 2 || algo == 3) {
                 // 3. Jika heuristic diperlukan
@@ -23,6 +34,11 @@ public class Main {
                 System.out.println("2. Jarak ke pintu keluar");
                 System.out.print("Pilihan heuristic (1/2): ");
                 heuristic = sc.nextInt();
+                if (heuristic == 1) {
+                    pw.println("Heuristik: Jumlah blocker ke pintu keluar");
+                } else if (heuristic == 2) {
+                    pw.println("Heuristik: Jarak ke pintu keluar");
+                }
             }
 
             Board board = Parser.parseBoard(path);
@@ -35,19 +51,32 @@ public class Main {
             long end = System.nanoTime();
             long durationInMillis = (end - start) / 1_000_000;
 
+
             System.out.println("\n========================");
+            pw.println("\n========================");
             if (!isFound) {
                 System.out.println("\nTidak ditemukan solusi");
+                pw.println("Tidak ditemukan solusi");
             } else {
-                System.out.println("\nSolusi:");
+                System.out.println("\nSolusi:\n");
+                pw.println("\nSolusi:\n");
                 s.display();
+                s.display2(pw);
             }
             System.out.println("\nJumlah node dikunjungi: " + visitedNodeCtr[0]);
+            pw.println("\nJumlah node dikunjungi: " + visitedNodeCtr[0]);
             System.out.println("Waktu eksekusi: " + durationInMillis + "ms");
+            pw.println("Waktu eksekusi: " + durationInMillis + "ms");
+
+            System.out.println("\nHasil disimpan di ../data/result.txt");
         } catch (Exception e) {
             System.out.println("\nTerjadi kesalahan");
+            pw.println("Terjadi kesalahan");
+        } finally {
+            if (pw != null) {
+                pw.close();
+            }
+            sc.close();
         }
-
-        sc.close();
     }
 }

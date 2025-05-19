@@ -1,3 +1,4 @@
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -136,5 +137,27 @@ public class Solver {
         char id = finishNode.getWhat().charAt(0);
         System.out.println("Gerakan " + ctr + ": " + finishNode.getWhat());
         System.out.println(finishNode.getState().toString2(id));
+    }
+
+    public void display2(PrintWriter pw) {
+        int finishNodeIdx = visitedNodes.size() - 1;
+        Node finishNode = visitedNodes.get(finishNodeIdx);
+        
+        int ctr = 0;
+        for (int i : finishNode.getPath()) {
+            Node iter = visitedNodes.get(i);
+            char id = iter.getWhat().charAt(0);
+            if (ctr == 0) {
+                pw.println("Papan Awal");
+            } else {
+                pw.println("Gerakan " + ctr + ": " + iter.getWhat());
+            }
+            pw.println(iter.getState().toString3(id));
+            ctr++;
+        }
+
+        char id = finishNode.getWhat().charAt(0);
+        pw.println("Gerakan " + ctr + ": " + finishNode.getWhat());
+        pw.println(finishNode.getState().toString3(id));
     }
 }
