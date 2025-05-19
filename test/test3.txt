@@ -1,0 +1,8 @@
+6 6
+8
+ .BBC..
+ .A.C..
+K.APP.D
+ .A...D
+ GGF..D
+ ..FEEE

@@ -1,0 +1,99 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test7.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 2
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 1
+
+========================
+
+Solusi:
+Papan Awal
+KB..CPP
+ BA.C..
+ .A.C..
+ G..DDD
+ G....E
+ FFFHHE
+
+Gerakan 1: B-bawah
+K...CPP
+ BA.C..
+ BA.C..
+ G..DDD
+ G....E
+ FFFHHE
+
+Gerakan 2: D-kiri
+K...CPP
+ BA.C..
+ BA.C..
+ G.DDD.
+ G....E
+ FFFHHE
+
+Gerakan 3: E-atas
+K...CPP
+ BA.C.E
+ BA.C.E
+ G.DDD.
+ G.....
+ FFFHH.
+
+Gerakan 4: H-kanan
+K...CPP
+ BA.C.E
+ BA.C.E
+ G.DDD.
+ G.....
+ FFF.HH
+
+Gerakan 5: F-kanan
+K...CPP
+ BA.C.E
+ BA.C.E
+ G.DDD.
+ G.....
+ .FFFHH
+
+Gerakan 6: G-bawah
+K...CPP
+ BA.C.E
+ BA.C.E
+ ..DDD.
+ G.....
+ GFFFHH
+
+Gerakan 7: D-kiri
+K...CPP
+ BA.C.E
+ BA.C.E
+ DDD...
+ G.....
+ GFFFHH
+
+Gerakan 8: C-bawah
+K....PP
+ BA.C.E
+ BA.C.E
+ DDDC..
+ G.....
+ GFFFHH
+
+Gerakan 9: P-kiri
+KPP....
+ BA.C.E
+ BA.C.E
+ DDDC..
+ G.....
+ GFFFHH
+
+
+Jumlah node dikunjungi: 33
+Waktu eksekusi: 11ms

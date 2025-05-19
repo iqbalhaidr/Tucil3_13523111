@@ -1,0 +1,435 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test1.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 3
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 1
+
+========================
+
+Solusi:
+Papan Awal
+ABB.E.
+ACD.EF
+ACDPPFK
+LLLI.F
+..JIGG
+MMJHH.
+
+Gerakan 1: H-kanan
+ABB.E.
+ACD.EF
+ACDPPFK
+LLLI.F
+..JIGG
+MMJ.HH
+
+Gerakan 2: I-bawah
+ABB.E.
+ACD.EF
+ACDPPFK
+LLL..F
+..JIGG
+MMJIHH
+
+Gerakan 3: F-atas
+ABB.EF
+ACD.EF
+ACDPPFK
+LLL...
+..JIGG
+MMJIHH
+
+Gerakan 4: L-kanan
+ABB.EF
+ACD.EF
+ACDPPFK
+...LLL
+..JIGG
+MMJIHH
+
+Gerakan 5: J-atas
+ABB.EF
+ACD.EF
+ACDPPFK
+..JLLL
+..JIGG
+MM.IHH
+
+Gerakan 6: M-kanan
+ABB.EF
+ACD.EF
+ACDPPFK
+..JLLL
+..JIGG
+.MMIHH
+
+Gerakan 7: A-bawah
+.BB.EF
+.CD.EF
+.CDPPFK
+A.JLLL
+A.JIGG
+AMMIHH
+
+Gerakan 8: B-kiri
+BB..EF
+.CD.EF
+.CDPPFK
+A.JLLL
+A.JIGG
+AMMIHH
+
+Gerakan 9: D-atas
+BBD.EF
+.CD.EF
+.C.PPFK
+A.JLLL
+A.JIGG
+AMMIHH
+
+Gerakan 10: C-bawah
+BBD.EF
+..D.EF
+...PPFK
+ACJLLL
+ACJIGG
+AMMIHH
+
+Gerakan 11: P-kiri
+BBD.EF
+..D.EF
+PP...FK
+ACJLLL
+ACJIGG
+AMMIHH
+
+Gerakan 12: D-bawah
+BB..EF
+..D.EF
+PPD..FK
+ACJLLL
+ACJIGG
+AMMIHH
+
+Gerakan 13: E-bawah
+BB...F
+..D.EF
+PPD.EFK
+ACJLLL
+ACJIGG
+AMMIHH
+
+Gerakan 14: B-kanan
+...BBF
+..D.EF
+PPD.EFK
+ACJLLL
+ACJIGG
+AMMIHH
+
+Gerakan 15: D-atas
+..DBBF
+..D.EF
+PP..EFK
+ACJLLL
+ACJIGG
+AMMIHH
+
+Gerakan 16: P-kanan
+..DBBF
+..D.EF
+..PPEFK
+ACJLLL
+ACJIGG
+AMMIHH
+
+Gerakan 17: C-atas
+.CDBBF
+.CD.EF
+..PPEFK
+A.JLLL
+A.JIGG
+AMMIHH
+
+Gerakan 18: P-kiri
+.CDBBF
+.CD.EF
+.PP.EFK
+A.JLLL
+A.JIGG
+AMMIHH
+
+Gerakan 19: A-atas
+ACDBBF
+ACD.EF
+APP.EFK
+..JLLL
+..JIGG
+.MMIHH
+
+Gerakan 20: M-kiri
+ACDBBF
+ACD.EF
+APP.EFK
+..JLLL
+..JIGG
+MM.IHH
+
+Gerakan 21: J-bawah
+ACDBBF
+ACD.EF
+APP.EFK
+...LLL
+..JIGG
+MMJIHH
+
+Gerakan 22: L-kiri
+ACDBBF
+ACD.EF
+APP.EFK
+LLL...
+..JIGG
+MMJIHH
+
+Gerakan 23: F-bawah
+ACDBB.
+ACD.EF
+APP.EFK
+LLL..F
+..JIGG
+MMJIHH
+
+Gerakan 24: B-kanan
+ACD.BB
+ACD.EF
+APP.EFK
+LLL..F
+..JIGG
+MMJIHH
+
+Gerakan 25: I-atas
+ACDIBB
+ACDIEF
+APP.EFK
+LLL..F
+..J.GG
+MMJ.HH
+
+Gerakan 26: L-kanan
+ACDIBB
+ACDIEF
+APP.EFK
+..LLLF
+..J.GG
+MMJ.HH
+
+Gerakan 27: P-kanan
+ACDIBB
+ACDIEF
+A.PPEFK
+..LLLF
+..J.GG
+MMJ.HH
+
+Gerakan 28: C-bawah
+A.DIBB
+A.DIEF
+A.PPEFK
+.CLLLF
+.CJ.GG
+MMJ.HH
+
+Gerakan 29: P-kiri
+A.DIBB
+A.DIEF
+APP.EFK
+.CLLLF
+.CJ.GG
+MMJ.HH
+
+Gerakan 30: I-bawah
+A.D.BB
+A.DIEF
+APPIEFK
+.CLLLF
+.CJ.GG
+MMJ.HH
+
+Gerakan 31: B-kiri
+A.DBB.
+A.DIEF
+APPIEFK
+.CLLLF
+.CJ.GG
+MMJ.HH
+
+Gerakan 32: F-atas
+A.DBBF
+A.DIEF
+APPIEFK
+.CLLL.
+.CJ.GG
+MMJ.HH
+
+Gerakan 33: L-kanan
+A.DBBF
+A.DIEF
+APPIEFK
+.C.LLL
+.CJ.GG
+MMJ.HH
+
+Gerakan 34: J-atas
+A.DBBF
+A.DIEF
+APPIEFK
+.CJLLL
+.CJ.GG
+MM..HH
+
+Gerakan 35: M-kanan
+A.DBBF
+A.DIEF
+APPIEFK
+.CJLLL
+.CJ.GG
+.MM.HH
+
+Gerakan 36: A-bawah
+..DBBF
+..DIEF
+.PPIEFK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 37: P-kiri
+..DBBF
+..DIEF
+PP.IEFK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 38: D-bawah
+...BBF
+..DIEF
+PPDIEFK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 39: B-kiri
+BB...F
+..DIEF
+PPDIEFK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 40: D-atas
+BBD..F
+..DIEF
+PP.IEFK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 41: E-atas
+BBD.EF
+..DIEF
+PP.I.FK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 42: I-atas
+BBDIEF
+..DIEF
+PP...FK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 43: P-kanan
+BBDIEF
+..DIEF
+...PPFK
+ACJLLL
+ACJ.GG
+AMM.HH
+
+Gerakan 44: A-atas
+BBDIEF
+..DIEF
+A..PPFK
+ACJLLL
+ACJ.GG
+.MM.HH
+
+Gerakan 45: M-kiri
+BBDIEF
+..DIEF
+A..PPFK
+ACJLLL
+ACJ.GG
+MM..HH
+
+Gerakan 46: J-bawah
+BBDIEF
+..DIEF
+A..PPFK
+AC.LLL
+ACJ.GG
+MMJ.HH
+
+Gerakan 47: L-kiri
+BBDIEF
+..DIEF
+A..PPFK
+ACLLL.
+ACJ.GG
+MMJ.HH
+
+Gerakan 48: H-kiri
+BBDIEF
+..DIEF
+A..PPFK
+ACLLL.
+ACJ.GG
+MMJHH.
+
+Gerakan 49: G-kiri
+BBDIEF
+..DIEF
+A..PPFK
+ACLLL.
+ACJGG.
+MMJHH.
+
+Gerakan 50: F-bawah
+BBDIE.
+..DIE.
+A..PP.K
+ACLLLF
+ACJGGF
+MMJHHF
+
+Gerakan 51: P-kanan
+BBDIE.
+..DIE.
+A...PPK
+ACLLLF
+ACJGGF
+MMJHHF
+
+
+Jumlah node dikunjungi: 2830
+Waktu eksekusi: 72ms

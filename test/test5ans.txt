@@ -1,0 +1,451 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test5.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 2
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 1
+
+========================
+
+Solusi:
+Papan Awal
+AAA.JL
+BBB.JL
+CPP.JIK
+C..F.I
+C.EFGG
+DDE.HH
+
+Gerakan 1: A-kanan
+.AAAJL
+BBB.JL
+CPP.JIK
+C..F.I
+C.EFGG
+DDE.HH
+
+Gerakan 2: B-kanan
+.AAAJL
+.BBBJL
+CPP.JIK
+C..F.I
+C.EFGG
+DDE.HH
+
+Gerakan 3: H-kiri
+.AAAJL
+.BBBJL
+CPP.JIK
+C..F.I
+C.EFGG
+DDEHH.
+
+Gerakan 4: P-kanan
+.AAAJL
+.BBBJL
+C.PPJIK
+C..F.I
+C.EFGG
+DDEHH.
+
+Gerakan 5: J-bawah
+.AAA.L
+.BBBJL
+C.PPJIK
+C..FJI
+C.EFGG
+DDEHH.
+
+Gerakan 6: E-atas
+.AAA.L
+.BBBJL
+C.PPJIK
+C.EFJI
+C.EFGG
+DD.HH.
+
+Gerakan 7: C-atas
+CAAA.L
+CBBBJL
+C.PPJIK
+..EFJI
+..EFGG
+DD.HH.
+
+Gerakan 8: H-kanan
+CAAA.L
+CBBBJL
+C.PPJIK
+..EFJI
+..EFGG
+DD..HH
+
+Gerakan 9: F-bawah
+CAAA.L
+CBBBJL
+C.PPJIK
+..E.JI
+..EFGG
+DD.FHH
+
+Gerakan 10: D-kanan
+CAAA.L
+CBBBJL
+C.PPJIK
+..E.JI
+..EFGG
+.DDFHH
+
+Gerakan 11: J-atas
+CAAAJL
+CBBBJL
+C.PPJIK
+..E..I
+..EFGG
+.DDFHH
+
+Gerakan 12: F-atas
+CAAAJL
+CBBBJL
+C.PPJIK
+..EF.I
+..EFGG
+.DD.HH
+
+Gerakan 13: H-kiri
+CAAAJL
+CBBBJL
+C.PPJIK
+..EF.I
+..EFGG
+.DDHH.
+
+Gerakan 14: C-bawah
+.AAAJL
+.BBBJL
+..PPJIK
+C.EF.I
+C.EFGG
+CDDHH.
+
+Gerakan 15: B-kiri
+.AAAJL
+BBB.JL
+..PPJIK
+C.EF.I
+C.EFGG
+CDDHH.
+
+Gerakan 16: A-kiri
+AAA.JL
+BBB.JL
+..PPJIK
+C.EF.I
+C.EFGG
+CDDHH.
+
+Gerakan 17: P-kiri
+AAA.JL
+BBB.JL
+.PP.JIK
+C.EF.I
+C.EFGG
+CDDHH.
+
+Gerakan 18: C-atas
+AAA.JL
+BBB.JL
+CPP.JIK
+C.EF.I
+C.EFGG
+.DDHH.
+
+Gerakan 19: F-atas
+AAAFJL
+BBBFJL
+CPP.JIK
+C.E..I
+C.E.GG
+.DDHH.
+
+Gerakan 20: J-bawah
+AAAF.L
+BBBFJL
+CPP.JIK
+C.E.JI
+C.E.GG
+.DDHH.
+
+Gerakan 21: H-kanan
+AAAF.L
+BBBFJL
+CPP.JIK
+C.E.JI
+C.E.GG
+.DD.HH
+
+Gerakan 22: G-kiri
+AAAF.L
+BBBFJL
+CPP.JIK
+C.E.JI
+C.EGG.
+.DD.HH
+
+Gerakan 23: I-bawah
+AAAF.L
+BBBFJL
+CPP.J.K
+C.E.JI
+C.EGGI
+.DD.HH
+
+Gerakan 24: D-kiri
+AAAF.L
+BBBFJL
+CPP.J.K
+C.E.JI
+C.EGGI
+DD..HH
+
+Gerakan 25: H-kiri
+AAAF.L
+BBBFJL
+CPP.J.K
+C.E.JI
+C.EGGI
+DD.HH.
+
+Gerakan 26: I-bawah
+AAAF.L
+BBBFJL
+CPP.J.K
+C.E.J.
+C.EGGI
+DD.HHI
+
+Gerakan 27: J-atas
+AAAFJL
+BBBFJL
+CPP.J.K
+C.E...
+C.EGGI
+DD.HHI
+
+Gerakan 28: D-kanan
+AAAFJL
+BBBFJL
+CPP.J.K
+C.E...
+C.EGGI
+.DDHHI
+
+Gerakan 29: C-bawah
+AAAFJL
+BBBFJL
+.PP.J.K
+C.E...
+C.EGGI
+CDDHHI
+
+Gerakan 30: P-kiri
+AAAFJL
+BBBFJL
+PP..J.K
+C.E...
+C.EGGI
+CDDHHI
+
+Gerakan 31: E-atas
+AAAFJL
+BBBFJL
+PPE.J.K
+C.E...
+C..GGI
+CDDHHI
+
+Gerakan 32: G-kiri
+AAAFJL
+BBBFJL
+PPE.J.K
+C.E...
+CGG..I
+CDDHHI
+
+Gerakan 33: F-bawah
+AAA.JL
+BBB.JL
+PPE.J.K
+C.EF..
+CGGF.I
+CDDHHI
+
+Gerakan 34: J-bawah
+AAA..L
+BBB..L
+PPE.J.K
+C.EFJ.
+CGGFJI
+CDDHHI
+
+Gerakan 35: A-kanan
+..AAAL
+BBB..L
+PPE.J.K
+C.EFJ.
+CGGFJI
+CDDHHI
+
+Gerakan 36: L-bawah
+..AAA.
+BBB...
+PPE.JLK
+C.EFJL
+CGGFJI
+CDDHHI
+
+Gerakan 37: B-kanan
+..AAA.
+...BBB
+PPE.JLK
+C.EFJL
+CGGFJI
+CDDHHI
+
+Gerakan 38: A-kanan
+...AAA
+...BBB
+PPE.JLK
+C.EFJL
+CGGFJI
+CDDHHI
+
+Gerakan 39: E-atas
+..EAAA
+..EBBB
+PP..JLK
+C..FJL
+CGGFJI
+CDDHHI
+
+Gerakan 40: P-kanan
+..EAAA
+..EBBB
+..PPJLK
+C..FJL
+CGGFJI
+CDDHHI
+
+Gerakan 41: C-atas
+..EAAA
+C.EBBB
+C.PPJLK
+C..FJL
+.GGFJI
+.DDHHI
+
+Gerakan 42: D-kiri
+..EAAA
+C.EBBB
+C.PPJLK
+C..FJL
+.GGFJI
+DD.HHI
+
+Gerakan 43: H-kiri
+..EAAA
+C.EBBB
+C.PPJLK
+C..FJL
+.GGFJI
+DDHH.I
+
+Gerakan 44: J-bawah
+..EAAA
+C.EBBB
+C.PP.LK
+C..FJL
+.GGFJI
+DDHHJI
+
+Gerakan 45: P-kanan
+..EAAA
+C.EBBB
+C..PPLK
+C..FJL
+.GGFJI
+DDHHJI
+
+Gerakan 46: E-bawah
+...AAA
+C.EBBB
+C.EPPLK
+C..FJL
+.GGFJI
+DDHHJI
+
+Gerakan 47: G-kiri
+...AAA
+C.EBBB
+C.EPPLK
+C..FJL
+GG.FJI
+DDHHJI
+
+Gerakan 48: C-atas
+C..AAA
+C.EBBB
+C.EPPLK
+...FJL
+GG.FJI
+DDHHJI
+
+Gerakan 49: E-bawah
+C..AAA
+C..BBB
+C.EPPLK
+..EFJL
+GG.FJI
+DDHHJI
+
+Gerakan 50: B-kiri
+C..AAA
+C.BBB.
+C.EPPLK
+..EFJL
+GG.FJI
+DDHHJI
+
+Gerakan 51: A-kiri
+CAAA..
+C.BBB.
+C.EPPLK
+..EFJL
+GG.FJI
+DDHHJI
+
+Gerakan 52: L-atas
+CAAA.L
+C.BBBL
+C.EPP.K
+..EFJ.
+GG.FJI
+DDHHJI
+
+Gerakan 53: P-kanan
+CAAA.L
+C.BBBL
+C.E.PPK
+..EFJ.
+GG.FJI
+DDHHJI
+
+
+Jumlah node dikunjungi: 1506
+Waktu eksekusi: 54ms

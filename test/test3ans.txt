@@ -1,0 +1,83 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test3.txt 
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 3
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 2
+
+========================
+
+Solusi:
+Papan Awal
+ .BBC..
+ .A.C..
+K.APP.D
+ .A...D
+ GGF..D
+ ..FEEE
+
+Gerakan 1: P-kanan
+ .BBC..
+ .A.C..
+K.A.PPD
+ .A...D
+ GGF..D
+ ..FEEE
+
+Gerakan 2: F-atas
+ .BBC..
+ .AFC..
+K.AFPPD
+ .A...D
+ GG...D
+ ...EEE
+
+Gerakan 3: G-kanan
+ .BBC..
+ .AFC..
+K.AFPPD
+ .A...D
+ ...GGD
+ ...EEE
+
+Gerakan 4: F-bawah
+ .BBC..
+ .A.C..
+K.A.PPD
+ .AF..D
+ ..FGGD
+ ...EEE
+
+Gerakan 5: P-kiri
+ .BBC..
+ .A.C..
+K.APP.D
+ .AF..D
+ ..FGGD
+ ...EEE
+
+Gerakan 6: A-bawah
+ .BBC..
+ ...C..
+K..PP.D
+ .AF..D
+ .AFGGD
+ .A.EEE
+
+Gerakan 7: P-kiri
+ .BBC..
+ ...C..
+KPP...D
+ .AF..D
+ .AFGGD
+ .A.EEE
+
+
+Jumlah node dikunjungi: 212
+Waktu eksekusi: 24ms

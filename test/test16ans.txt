@@ -1,0 +1,91 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test16.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 3
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 1
+
+========================
+
+Solusi:
+Papan Awal
+..P...
+AAP...
+H..DGG
+H..DCC
+R.EE..
+RFF.QQ
+  K
+
+Gerakan 1: E-kanan
+..P...
+AAP...
+H..DGG
+H..DCC
+R..EE.
+RFF.QQ
+  K
+
+Gerakan 2: P-bawah
+......
+AA....
+H.PDGG
+H.PDCC
+R..EE.
+RFF.QQ
+  K
+
+Gerakan 3: A-kanan
+......
+....AA
+H.PDGG
+H.PDCC
+R..EE.
+RFF.QQ
+  K
+
+Gerakan 4: H-atas
+......
+H...AA
+H.PDGG
+..PDCC
+R..EE.
+RFF.QQ
+  K
+
+Gerakan 5: R-atas
+......
+H...AA
+H.PDGG
+R.PDCC
+R..EE.
+.FF.QQ
+  K
+
+Gerakan 6: F-kiri
+......
+H...AA
+H.PDGG
+R.PDCC
+R..EE.
+FF..QQ
+  K
+
+Gerakan 7: P-bawah
+......
+H...AA
+H..DGG
+R..DCC
+R.PEE.
+FFP.QQ
+  K
+
+
+Jumlah node dikunjungi: 1184
+Waktu eksekusi: 53ms

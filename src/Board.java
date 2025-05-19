@@ -311,4 +311,45 @@ public class Board {
         return block;
     }
 
+    public int calcH2() {
+        Piece prim = null;
+        for (Piece p : pieces) {
+            if (p.isPrimary()) {
+                prim = p;
+            }
+        }
+
+        int exitX = exitGate.x;
+        int exitY = exitGate.y;
+        int primX = prim.getHead().x;
+        int primY = prim.getHead().y;
+        int primSize = prim.getSize();
+
+        if (prim.isOrientationHorizontal()) {
+            int dxHead = Math.abs(exitX - primX);
+            int dxTail = Math.abs(exitX - (primX + primSize - 1));
+            if (dxHead < dxTail) {
+                return dxHead;
+            } else {
+                return dxTail;
+            }
+        } else {
+            int dyHead = Math.abs(exitY - primY);
+            int dyTail = Math.abs(exitY - (primY + primSize - 1));
+            if (dyHead < dyTail) {
+                return dyHead;
+            } else {
+                return dyTail;
+            }
+        }
+    }
+
+    public String toHashString() {
+        StringBuilder sb = new StringBuilder();
+        for (char[] row : buf) {
+            sb.append(row);
+        }
+        return sb.toString();
+    }
+
 }

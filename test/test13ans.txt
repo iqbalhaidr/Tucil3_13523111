@@ -1,0 +1,254 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test13.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 1
+
+========================
+
+Solusi:
+Papan Awal
+.AB..C
+.ABDDC
+PPLJ..K
+F.LJI.
+FGGJI.
+FHHH..
+
+Gerakan 1: C-bawah
+.AB...
+.ABDD.
+PPLJ.CK
+F.LJIC
+FGGJI.
+FHHH..
+
+Gerakan 2: D-kanan
+.AB...
+.AB.DD
+PPLJ.CK
+F.LJIC
+FGGJI.
+FHHH..
+
+Gerakan 3: J-atas
+.AB...
+.ABJDD
+PPLJ.CK
+F.LJIC
+FGG.I.
+FHHH..
+
+Gerakan 4: I-atas
+.AB...
+.ABJDD
+PPLJICK
+F.LJIC
+FGG...
+FHHH..
+
+Gerakan 5: G-kanan
+.AB...
+.ABJDD
+PPLJICK
+F.LJIC
+F...GG
+FHHH..
+
+Gerakan 6: L-bawah
+.AB...
+.ABJDD
+PP.JICK
+F.LJIC
+F.L.GG
+FHHH..
+
+Gerakan 7: P-kanan
+.AB...
+.ABJDD
+.PPJICK
+F.LJIC
+F.L.GG
+FHHH..
+
+Gerakan 8: F-atas
+FAB...
+FABJDD
+FPPJICK
+..LJIC
+..L.GG
+.HHH..
+
+Gerakan 9: H-kiri
+FAB...
+FABJDD
+FPPJICK
+..LJIC
+..L.GG
+HHH...
+
+Gerakan 10: J-bawah
+FAB...
+FAB.DD
+FPP.ICK
+..LJIC
+..LJGG
+HHHJ..
+
+Gerakan 11: P-kanan
+FAB...
+FAB.DD
+F.PPICK
+..LJIC
+..LJGG
+HHHJ..
+
+Gerakan 12: A-bawah
+F.B...
+F.B.DD
+F.PPICK
+.ALJIC
+.ALJGG
+HHHJ..
+
+Gerakan 13: P-kiri
+F.B...
+F.B.DD
+FPP.ICK
+.ALJIC
+.ALJGG
+HHHJ..
+
+Gerakan 14: J-atas
+F.B...
+F.B.DD
+FPPJICK
+.ALJIC
+.ALJGG
+HHH...
+
+Gerakan 15: H-kanan
+F.B...
+F.B.DD
+FPPJICK
+.ALJIC
+.ALJGG
+...HHH
+
+Gerakan 16: L-bawah
+F.B...
+F.B.DD
+FPPJICK
+.A.JIC
+.ALJGG
+..LHHH
+
+Gerakan 17: F-bawah
+..B...
+..B.DD
+.PPJICK
+FA.JIC
+FALJGG
+F.LHHH
+
+Gerakan 18: P-kiri
+..B...
+..B.DD
+PP.JICK
+FA.JIC
+FALJGG
+F.LHHH
+
+Gerakan 19: B-bawah
+......
+....DD
+PPBJICK
+FABJIC
+FALJGG
+F.LHHH
+
+Gerakan 20: D-kiri
+......
+DD....
+PPBJICK
+FABJIC
+FALJGG
+F.LHHH
+
+Gerakan 21: I-atas
+....I.
+DD..I.
+PPBJ.CK
+FABJ.C
+FALJGG
+F.LHHH
+
+Gerakan 22: B-atas
+..B.I.
+DDB.I.
+PP.J.CK
+FA.J.C
+FALJGG
+F.LHHH
+
+Gerakan 23: P-kanan
+..B.I.
+DDB.I.
+.PPJ.CK
+FA.J.C
+FALJGG
+F.LHHH
+
+Gerakan 24: L-atas
+..B.I.
+DDB.I.
+.PPJ.CK
+FALJ.C
+FALJGG
+F..HHH
+
+Gerakan 25: F-atas
+..B.I.
+DDB.I.
+FPPJ.CK
+FALJ.C
+FALJGG
+...HHH
+
+Gerakan 26: H-kiri
+..B.I.
+DDB.I.
+FPPJ.CK
+FALJ.C
+FALJGG
+HHH...
+
+Gerakan 27: J-bawah
+..B.I.
+DDB.I.
+FPP..CK
+FALJ.C
+FALJGG
+HHHJ..
+
+Gerakan 28: C-atas
+..B.IC
+DDB.IC
+FPP...K
+FALJ..
+FALJGG
+HHHJ..
+
+Gerakan 29: P-kanan
+..B.IC
+DDB.IC
+F...PPK
+FALJ..
+FALJGG
+HHHJ..
+
+
+Jumlah node dikunjungi: 3374
+Waktu eksekusi: 85ms

@@ -1,0 +1,97 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test4.txt 
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 3
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 2
+
+========================
+
+Solusi:
+Papan Awal
+.BBC......
+.A.C.HH.U.
+.A...D..U.
+.A...D.TT.
+GGF..D.S..
+M.FEEE.S..
+M.LL.P..RR
+M..J.P....
+...J.IIIQ.
+NN...OOOQ.
+     K
+
+Gerakan 1: L-kiri
+.BBC......
+.A.C.HH.U.
+.A...D..U.
+.A...D.TT.
+GGF..D.S..
+M.FEEE.S..
+MLL..P..RR
+M..J.P....
+...J.IIIQ.
+NN...OOOQ.
+     K
+
+Gerakan 2: J-atas
+.BBC......
+.A.C.HH.U.
+.A...D..U.
+.A...D.TT.
+GGF..D.S..
+M.FEEE.S..
+MLLJ.P..RR
+M..J.P....
+.....IIIQ.
+NN...OOOQ.
+     K
+
+Gerakan 3: I-kiri
+.BBC......
+.A.C.HH.U.
+.A...D..U.
+.A...D.TT.
+GGF..D.S..
+M.FEEE.S..
+MLLJ.P..RR
+M..J.P....
+..III...Q.
+NN...OOOQ.
+     K
+
+Gerakan 4: O-kiri
+.BBC......
+.A.C.HH.U.
+.A...D..U.
+.A...D.TT.
+GGF..D.S..
+M.FEEE.S..
+MLLJ.P..RR
+M..J.P....
+..III...Q.
+NNOOO...Q.
+     K
+
+Gerakan 5: P-bawah
+.BBC......
+.A.C.HH.U.
+.A...D..U.
+.A...D.TT.
+GGF..D.S..
+M.FEEE.S..
+MLLJ....RR
+M..J......
+..IIIP..Q.
+NNOOOP..Q.
+     K
+
+
+Jumlah node dikunjungi: 6849
+Waktu eksekusi: 584ms

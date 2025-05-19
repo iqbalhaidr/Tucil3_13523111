@@ -1,0 +1,113 @@
+KEPANJANGAN...
+
+Gerakan 268: G-kanan
+    K
+H...BB
+H..AAA
+....GG
+....CC
+..EDP.
+FFEDP.
+
+Gerakan 269: H-bawah
+    K
+....BB
+...AAA
+H...GG
+H...CC
+..EDP.
+FFEDP.
+
+Gerakan 270: G-kiri
+    K
+....BB
+...AAA
+HGG...
+H...CC
+..EDP.
+FFEDP.
+
+Gerakan 271: H-bawah
+    K
+....BB
+...AAA
+.GG...
+H...CC
+H.EDP.
+FFEDP.
+
+Gerakan 272: G-kanan
+    K
+....BB
+...AAA
+..GG..
+H...CC
+H.EDP.
+FFEDP.
+
+Gerakan 273: H-atas
+    K
+....BB
+H..AAA
+H.GG..
+....CC
+..EDP.
+FFEDP.
+
+Gerakan 274: C-kiri
+    K
+....BB
+H..AAA
+H.GG..
+CC....
+..EDP.
+FFEDP.
+
+Gerakan 275: P-atas
+    K
+....BB
+H..AAA
+H.GGP.
+CC..P.
+..ED..
+FFED..
+
+Gerakan 276: A-kiri
+    K
+....BB
+HAAA..
+H.GGP.
+CC..P.
+..ED..
+FFED..
+
+Gerakan 277: P-atas
+    K
+....BB
+HAAAP.
+H.GGP.
+CC....
+..ED..
+FFED..
+
+Gerakan 278: B-kiri
+    K
+..BB..
+HAAAP.
+H.GGP.
+CC....
+..ED..
+FFED..
+
+Gerakan 279: P-atas
+    K
+..BBP.
+HAAAP.
+H.GG..
+CC....
+..ED..
+FFED..
+
+
+Jumlah node dikunjungi: 557
+Waktu eksekusi: 49ms

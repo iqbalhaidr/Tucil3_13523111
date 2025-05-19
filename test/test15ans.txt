@@ -1,0 +1,171 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test15.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 2
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 2
+
+========================
+
+Solusi:
+Papan Awal
+ B.IIJ.
+ B.C.J.
+ AAC..D
+KG.CPPD
+ G....E
+ FFFHHE
+
+Gerakan 1: J-bawah
+ B.II..
+ B.C.J.
+ AAC.JD
+KG.CPPD
+ G....E
+ FFFHHE
+
+Gerakan 2: I-kanan
+ B...II
+ B.C.J.
+ AAC.JD
+KG.CPPD
+ G....E
+ FFFHHE
+
+Gerakan 3: D-atas
+ B...II
+ B.C.JD
+ AAC.JD
+KG.CPP.
+ G....E
+ FFFHHE
+
+Gerakan 4: I-kiri
+ BII...
+ B.C.JD
+ AAC.JD
+KG.CPP.
+ G....E
+ FFFHHE
+
+Gerakan 5: J-atas
+ BII.J.
+ B.C.JD
+ AAC..D
+KG.CPP.
+ G....E
+ FFFHHE
+
+Gerakan 6: E-atas
+ BII.J.
+ B.C.JD
+ AAC..D
+KG.CPPE
+ G....E
+ FFFHH.
+
+Gerakan 7: I-kanan
+ B.IIJ.
+ B.C.JD
+ AAC..D
+KG.CPPE
+ G....E
+ FFFHH.
+
+Gerakan 8: J-bawah
+ B.II..
+ B.C.JD
+ AAC.JD
+KG.CPPE
+ G....E
+ FFFHH.
+
+Gerakan 9: I-kanan
+ B..II.
+ B.C.JD
+ AAC.JD
+KG.CPPE
+ G....E
+ FFFHH.
+
+Gerakan 10: H-kanan
+ B..II.
+ B.C.JD
+ AAC.JD
+KG.CPPE
+ G....E
+ FFF.HH
+
+Gerakan 11: I-kanan
+ B...II
+ B.C.JD
+ AAC.JD
+KG.CPPE
+ G....E
+ FFF.HH
+
+Gerakan 12: C-atas
+ B.C.II
+ B.C.JD
+ AAC.JD
+KG..PPE
+ G....E
+ FFF.HH
+
+Gerakan 13: P-kiri
+ B.C.II
+ B.C.JD
+ AAC.JD
+KGPP..E
+ G....E
+ FFF.HH
+
+Gerakan 14: F-kanan
+ B.C.II
+ B.C.JD
+ AAC.JD
+KGPP..E
+ G....E
+ .FFFHH
+
+Gerakan 15: I-kiri
+ B.CII.
+ B.C.JD
+ AAC.JD
+KGPP..E
+ G....E
+ .FFFHH
+
+Gerakan 16: J-bawah
+ B.CII.
+ B.C..D
+ AAC..D
+KGPP.JE
+ G...JE
+ .FFFHH
+
+Gerakan 17: G-bawah
+ B.CII.
+ B.C..D
+ AAC..D
+K.PP.JE
+ G...JE
+ GFFFHH
+
+Gerakan 18: P-kiri
+ B.CII.
+ B.C..D
+ AAC..D
+KPP..JE
+ G...JE
+ GFFFHH
+
+
+Jumlah node dikunjungi: 36
+Waktu eksekusi: 14ms

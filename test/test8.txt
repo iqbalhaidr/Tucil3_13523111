@@ -1,0 +1,13 @@
+10 10
+23
+.BBC......
+PA.C.HH.U.
+PA...D..U.
+.A...D.TT.
+GGF..D.S..
+..FEEE.S..
+..LL.V..RR
+MMMJ.V....
+...J.IIIQ.
+NNNJ.OOOQ.
+K

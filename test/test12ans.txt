@@ -1,0 +1,68 @@
+Masukkan path ke file (relative terhadap ./bin/): ../test/test12.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 1
+
+========================
+
+Solusi:
+Papan Awal
+.....P
+AAA..P
+H..DGG
+H.EDCC
+R.E...
+RFF.QQ
+     K
+
+Gerakan 1: D-atas
+...D.P
+AAAD.P
+H...GG
+H.E.CC
+R.E...
+RFF.QQ
+     K
+
+Gerakan 2: Q-kiri
+...D.P
+AAAD.P
+H...GG
+H.E.CC
+R.E...
+RFFQQ.
+     K
+
+Gerakan 3: C-kiri
+...D.P
+AAAD.P
+H...GG
+H.ECC.
+R.E...
+RFFQQ.
+     K
+
+Gerakan 4: G-kiri
+...D.P
+AAAD.P
+H..GG.
+H.ECC.
+R.E...
+RFFQQ.
+     K
+
+Gerakan 5: P-bawah
+...D..
+AAAD..
+H..GG.
+H.ECC.
+R.E..P
+RFFQQP
+     K
+
+
+Jumlah node dikunjungi: 551
+Waktu eksekusi: 30ms

@@ -1,0 +1,92 @@
+C:\Users\IQBAL-LAPTOP\IF\Strago\Tucil3_13523111\bin>java -jar program.jar
+Masukkan path ke file (relative terhadap ./bin/): ../test/test2.txt
+
+Pilih algoritma pencarian:
+1. UCS
+2. Greedy Best-First Search
+3. A*
+Pilihan (1/2/3): 3
+
+Pilih heuristic:
+1. Jumlah blocker ke pintu keluar (Recommended)
+2. Jarak ke pintu keluar
+Pilihan heuristic (1/2): 1
+
+========================
+
+Solusi:
+Papan Awal
+K
+.....B
+AAAAGB
+P..DG.
+P.EDCC
+..E...
+.FF...
+
+Gerakan 1: F-kiri
+K
+.....B
+AAAAGB
+P..DG.
+P.EDCC
+..E...
+FF....
+
+Gerakan 2: E-bawah
+K
+.....B
+AAAAGB
+P..DG.
+P..DCC
+..E...
+FFE...
+
+Gerakan 3: D-bawah
+K
+.....B
+AAAAGB
+P...G.
+P...CC
+..ED..
+FFED..
+
+Gerakan 4: C-kiri
+K
+.....B
+AAAAGB
+P...G.
+PCC...
+..ED..
+FFED..
+
+Gerakan 5: G-bawah
+K
+.....B
+AAAA.B
+P.....
+PCC.G.
+..EDG.
+FFED..
+
+Gerakan 6: A-kanan
+K
+.....B
+.AAAAB
+P.....
+PCC.G.
+..EDG.
+FFED..
+
+Gerakan 7: P-atas
+K
+P....B
+PAAAAB
+......
+.CC.G.
+..EDG.
+FFED..
+
+
+Jumlah node dikunjungi: 541
+Waktu eksekusi: 29ms
